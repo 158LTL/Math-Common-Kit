@@ -1,0 +1,33 @@
+// Main App source code
+#include <iostream>
+#include <Windows.h>
+using namespace std;
+int main() {
+	int code;
+	cout << "Math Common Kit [Version] Build 1000" << "\n";
+	cout << "" << "\n";
+	cout << "============= Menu =============" << "\n";
+	cout << "=========1  Calculation ========" << "\n";
+	cout << "======2 Pythagorean Number =====" << "\n";
+	cout << "======3 Irrational Number ======" << "\n";
+	cout << "==========4 Function ===========" << "\n";
+	cout << "============5 About ============" << "\n";
+	cout << "Please enter the function number" << "\n";
+	cin >> code;
+	if (code = 1) {
+		WinExec("Calculation.exe",SW_SHOW);
+	 }
+	if (code = 2) {
+		WinExec("Pythagorean Number.exe", SW_SHOW);
+	}
+	if (code = 3) {
+		WinExec("Irrational Number.exe", SW_SHOW);
+	}
+	if (code = 4) {
+		WinExec("Function.exe", SW_SHOW);
+	}
+	if (code = 5) {
+		WinExec("About.exe", SW_SHOW);
+	}
+	return 0;
+}
